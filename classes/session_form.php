@@ -235,9 +235,11 @@ class mod_facetoface_session_form extends moodleform {
         $errors = parent::validation($data, $files);
         $dateids = $data['sessiondateid'];
         $dates = count($dateids);
+         $timestart = $data['timestart'];
+        $timefinish = $data['timefinish'];
         for ($i = 0; $i < $dates; $i++) {
-             $starttime = $data["timestart"];
-             $endtime = $data["timefinish"];
+             $starttime = $data["timestart[$i]"];
+             $endtime = $data["timefinish[$i]"];
             $removecheckbox = empty($data["datedelete"]) ? array() : $data["datedelete"];
             if ($starttime > $endtime && !isset($removecheckbox[$i])) {
                 $errstr = get_string('error:sessionstartafterend', 'facetoface');
