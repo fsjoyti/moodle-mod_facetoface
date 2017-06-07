@@ -311,6 +311,7 @@ $string['scheduledsession'] = 'Scheduled session';
 $string['scheduledsessions'] = 'Scheduled sessions';
 $string['seatsavailable'] = 'Seats available';
 $string['seeattendees'] = 'See attendees';
+$string['search:activity'] = 'Facetoface - activity information';
 $string['sentremindermanager'] = 'Sent reminder email to user manager';
 $string['sentreminderuser'] = 'Sent reminder email to user';
 $string['sessiondate'] = 'Session date';
